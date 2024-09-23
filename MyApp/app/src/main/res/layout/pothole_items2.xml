@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/roadTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Road"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/sizeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Size"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/TextViewdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:padding="8dp" />
+
+    <ImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/bidButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bid"
+        android:layout_gravity="center"
+        android:padding="8dp" />
+
+
+
+<Button
+    android:id="@+id/viewNotificationsButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="View Notifications"
+    android:layout_margin="16dp"
+    android:textColor="#FFFFFF"
+    android:background="@drawable/red_button_background"
+    android:paddingVertical="12dp"
+    android:layout_gravity="center_horizontal"/>
+
+
+</LinearLayout>
+
+

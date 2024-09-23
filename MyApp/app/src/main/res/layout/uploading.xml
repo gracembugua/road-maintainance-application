@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/welcomeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp" />
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@id/welcomeTextView"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Username"
+            android:textSize="20sp"
+            android:layout_below="@id/tvUsername"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/edittext_background" />
+
+        <TextView
+            android:id="@+id/tvroadname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose the name of the road"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@id/usernameEditText"
+            android:layout_marginTop="20dp" />
+
+        <Spinner
+            android:id="@+id/roadsSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvroadname"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose date"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@id/roadsSpinner"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/selectedDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tap me"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/tvDate"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:onClick="showDatePicker" />
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selectedDateTextView"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvEstimatedSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estimated size of the pothole (in cm)"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@id/datePicker"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/estimatedSizeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter estimated size"
+            android:textSize="20sp"
+            android:layout_below="@id/tvEstimatedSize"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/edittext_background" />
+
+        <EditText
+            android:id="@+id/locationEditText"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="pinned location"
+            android:inputType="textMultiLine"
+            android:textSize="20sp"
+            android:layout_below="@id/estimatedSizeEditText"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/edittext_background" />
+        <fragment
+            android:id="@+id/mapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/locationEditText"
+            android:layout_marginTop="20dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+        <Button
+            android:id="@+id/uploadPhotoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Photo"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_below="@+id/mapFragment"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/takePhotoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take a Photo"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_below="@id/uploadPhotoButton"
+            android:layout_marginTop="10dp" />
+        <Button
+            android:id="@+id/recordVideoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Record Video"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_below="@id/uploadPhotoButton"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/takePhotoButton" />
+
+        <ImageView
+            android:id="@+id/photoImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/takePhotoButton"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Uploaded Photo"
+            android:background="@android:color/darker_gray" />
+        <FrameLayout
+            android:id="@+id/videoContainer"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/photoImageView"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray">
+
+            <VideoView
+                android:id="@+id/videoview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/videoContainer"
+            android:background="@drawable/red_button_background"
+            android:layout_marginTop="20dp" />
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
+
+

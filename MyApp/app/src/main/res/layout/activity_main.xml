@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tv_citizens_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Citizens Sign In"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:hint="Email"
+        android:layout_marginBottom="16dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/red_button_background"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_already_have_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/red_button_background"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_signin_engineer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In as an Engineer"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/red_button_background"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_county_municipal_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="County Municipal Login"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/red_button_background"/>
+
+</LinearLayout>

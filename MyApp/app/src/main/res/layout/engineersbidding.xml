@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter Email Address"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"/>
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="First Name"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"/>
+
+
+    <EditText
+        android:id="@+id/LastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Last Name"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"/>
+
+
+    <TextView
+        android:id="@+id/ChooseLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Your Location"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+
+    <Spinner
+        android:id="@+id/Location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+
+    <TextView
+        android:id="@+id/LevelOfEducation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level of Education"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+
+    <Spinner
+        android:id="@+id/EducationLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+
+    <TextView
+        android:id="@+id/YearsOfExperience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Years of Experience"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+
+    <Spinner
+        android:id="@+id/spYearsOfExperience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+
+    <EditText
+        android:id="@+id/Amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Hint Amount"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"/>
+
+
+    <EditText
+        android:id="@+id/PhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:hint="Enter Your Phone Number"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"/>
+
+
+    <Button
+        android:id="@+id/Bid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bid"
+        android:textSize="18sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:padding="12dp"/>
+</LinearLayout>
